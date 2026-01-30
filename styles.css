@@ -1357,6 +1357,7 @@ h1 {
 }
 
 /* ===== FLOATING ACTION BUTTONS ===== */
+/* keep floating position */
 .fab-container {
   position: fixed;
   right: 24px;
@@ -1367,31 +1368,42 @@ h1 {
   z-index: 100;
 }
 
+/* ICON ONLY – removes box, bg, padding, shadow */
 .fab {
-  width: 56px;
-  height: 56px;
-  border-radius: 18px;
-  display: flex;
+  background: #000 !important;
+  width: auto !important;
+  height: auto !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  border: none !important;
+
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  text-decoration: none;
+
   font-size: 22px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  border: none;
   cursor: pointer;
-  will-change: transform;
+  transition: transform 0.25s ease;
 }
 
+/* hover effect only on icon */
+.fab:hover {
+  transform: scale(1.2);
+}
+
+/* make sure icon itself has no box */
 .fab i {
-  color: white;
   background: none !important;
   box-shadow: none !important;
   border: none !important;
   width: auto !important;
   height: auto !important;
+  padding: 0 !important;
+  color: inherit;
+  font-size: 30px
 }
+
 
 .fab:hover {
   transform: translateY(-4px) scale(1.1);
@@ -1399,7 +1411,9 @@ h1 {
 }
 
 .whatsapp-fab {
-  background: #25D366;
+  color: #25D366;  
+  background: none !important;
+  box-shadow: none !important;
 }
 
 .theme-fab {
@@ -1408,6 +1422,8 @@ h1 {
 
 .github-fab {
   background: #333;
+  background: none !important;
+  box-shadow: none !important;
 }
 
 /* ===== PROJECT MODAL ===== */
