@@ -3,6 +3,21 @@
 // Project Data with enhanced details
 const projects = [
   {
+  "title": "QChat - Real-Time Messenger",
+  "desc": "Full-stack chat application with real-time messaging, user authentication, online status tracking, and media sharing. Features instant message delivery with Socket.io and secure image uploads via Cloudinary.",
+  "tags": ["ReactJS", "NodeJS", "MongoDB", "Socket.io", "JWT", "Cloudinary", "Vercel"],
+  "code": "https://github.com/ThatGUY12034/QChat",
+  "live": "https://qchat12.vercel.app/",
+  "features": [
+    "Real-time messaging with Socket.io",
+    "JWT authentication & user profiles",
+    "Online/offline status indicators",
+    "Image sharing via Cloudinary",
+    "Message read receipts",
+    "Responsive chat interface"
+  ]
+},
+  {
     title: "CtrlAI - AI SaaS Platform",
     desc: "Full-stack AI application with authentication, premium features, image processing, resume analysis, and community interactions. Deployed on Vercel with real-time AI capabilities.",
     tags: ["ReactJS", "NodeJS", "Postgres", "Clerk", "OpenAI", "Stripe"],
